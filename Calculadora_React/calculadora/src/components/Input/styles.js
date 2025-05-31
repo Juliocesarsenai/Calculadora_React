@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const InputContainer= styled.div`
     width: 100%;
     height: 75px;
-    background-color: #4169E1;
+    background-color: #FFFFFF;
 
     display:flex;
     align-items: center;
@@ -17,10 +17,10 @@ export const InputContainer= styled.div`
     input {
     width: 100%;
     height:75px;
-    background-color: #4169E1;
+    background-color: #FFFFFF;
 
-    border-radius:5px;
-    border:2px solid #FFF;
+    border-radius:10px;
+    border:2px solid #000000;
 
     flex-direction:column;
     align-items: flex-end;
@@ -28,6 +28,6 @@ export const InputContainer= styled.div`
     padding:0 10px;
     font-size: 24px;
     font-family:'Roboto';
-    color:#FFFFFF;
+    color:#000000;
     }
 `;

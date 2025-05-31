@@ -1,15 +1,19 @@
 import styled from 'styled-components';
 
 export const ButtonContainer = styled.button`
-    padding: 20px;
-    border: 1px solid #CDCDCD;
-    background-color: #00AAFF;
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 700;
-    flex: 1;
+  background-color: #444;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
 
-    &:hover {
-        opacity: 0.6;
-    }
+  /* Grid support */
+  grid-column: ${({ gridSpan }) => gridSpan && `span ${gridSpan}`};
+  grid-row: ${({ gridRow }) => gridRow && `span ${gridRow}`};
+
+  &:hover {
+    background-color: #555;
+  }
 `;

@@ -1,13 +1,12 @@
-//calculadora\src\components\Button\index.js
-import { ButtonContainer } from "./styles";
 
-const Button = ({label,onClick}) => {
+import { ButtonContainer } from './styles';
+
+const Button = ({ label, onClick, gridSpan, gridRow }) => {
   return (
-    <ButtonContainer onClick={onClick} type="button">
+    <ButtonContainer onClick={onClick} gridSpan={gridSpan} gridRow={gridRow}>
       {label}
-      </ButtonContainer>   
-   
+    </ButtonContainer>
   );
-}
+};
 
 export default Button;
